@@ -1,8 +1,10 @@
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 import random
+import os
 
-TOKEN =7875997444:AAEN15vuATcEVUAjkocksKLK58cWQ-uJ3F0
+# توکن از Environment Variables گرفته میشه
+TOKEN = os.getenv("TELEGRAM_TOKEN")
 
 members = []
 
